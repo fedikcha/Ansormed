@@ -3,6 +3,10 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: Arial, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444;
 }
 
 /* Container */
@@ -14,3 +18,11 @@
   width: 100%;
   max-width: 1160px;
 }
+
+
+
+
+
+
+open sans 400, 600, 700
+open sans candansed 700
