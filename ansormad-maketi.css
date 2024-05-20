@@ -304,13 +304,14 @@ html{
   margin-bottom: 40px;
   font-size: 36px;
   line-height: 1.2;
-  font-family: "Open Sans Condensed" "Open Sans" sans-serif;
+  font-family: "Open Sans Condensed", "Open Sans", sans-serif;
   text-align: center;
   color: #fff;
 }
 
 .cta-links{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -404,6 +405,10 @@ html{
     width: 120px;
     height: 120px;
   }
+
+  .cta-heading{
+    font-size: 24px;
+  }
 }
 
 @media only screen and (max-width: 550px) {
@@ -435,5 +440,19 @@ html{
 
   .index-service-description{
     text-align: justify;
+  }
+
+  .cta{
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  .cta-links{
+    flex-direction: column;
+  }
+
+  .cta-links-item:not(:last-child){
+    margin-right: 0;
+    margin-bottom: 24px;
   }
 }
