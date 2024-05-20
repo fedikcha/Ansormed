@@ -18,16 +18,16 @@
 <body>
 
 <!-- SITE-HEADER -->
-<header class="site-header" style="display: none;">
+<header class="site-header ">
   <div class="site-header-container container">
-    <a href="#" class="site-logo">
+    <a href="#" class="site-logo site-header-site-logo">
       <img class="site-logo-img" src="logo-icon.jpg" srcset="logo-icon.jpg 1x , logo-icon@2x.jpg 2x" alt="Ansormod logo icon" width="50" height="50">
       <span class="site-header-logo-text">Ansormed</span>
     </a>
 
 
   <!-- SITENAV -->
-  <nav class="sitenav">
+  <nav class="sitenav site-header-sitenav">
     <ul class="sitenav-list">
       <li class="sitenav-item"><a href="#" class="sitenav-link">Xizmatlar</a></li>
       <li class="sitenav-item"><a href="#" class="sitenav-link">Dorilar</a></li>
@@ -37,7 +37,9 @@
     </ul>
   </nav>
 
-  <a href="#index-cta" class="main-link">qabulga yozilish</a>
+  <a href="#index-cta" class="main-link site-header-main-link">qabulga yozilish</a>
+
+  <button class="site-header-toggle-button" type="button">Menyu</button>
 </div>
 </header>
 
@@ -118,7 +120,7 @@
 
 
 <!-- SITE-FOOTER -->
-<footer class="site-footer" style="display: none;">
+<footer class="site-footer">
   <div class="site-footer-container container">
     <a href="#" class="site-logo site-logo-site-footer">
       <img class="site-logo-img" src="logo-icon.jpg" srcset="logo-icon.jpg 1x , logo-icon@2x.jpg 2x" alt="Ansormod logo icon" width="50" height="50">
@@ -138,6 +140,8 @@
   </nav>
 </div>
 </footer>
+
+<script src="main.js"></script>
 
 </body>
 </html>

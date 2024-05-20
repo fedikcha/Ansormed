@@ -32,6 +32,8 @@ html{
 
 /* SITE HEADER */
 .site-header{
+  position: relative;
+  z-index: 1;
   padding-top: 24px;
   padding-bottom: 24px;
   /* display: flex; */
@@ -64,7 +66,7 @@ html{
 }
 
 .site-header-logo-text{
-  font-style: 24px;
+  font-size: 24px;
   font-weight: 600;
 }
 .site-header-logo-text:hover{
@@ -177,6 +179,14 @@ html{
   border: 1px solid transparent ;
   background-color: #DE2E54;
   color: #fff;
+}
+
+.site-header-toggle-button{
+  display: none;
+  padding: 10px;
+  border: 1px solid #de2e54;
+  border-radius: 2px;
+  background-color: #fff;
 }
 
 
@@ -337,6 +347,47 @@ html{
 }
 
 
+
+
+@media only screen and (max-width: 1100px) {
+  .site-header-site-logo{
+    margin-right: auto;
+  }
+
+  .site-header-main-link{
+    margin-right: 24px;
+  }
+
+  .site-header-toggle-button{
+    display: block;
+  }
+
+  .site-header-sitenav{
+    display: none;
+  }
+
+  .site-header-open .site-header-sitenav{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .site-header-sitenav .sitenav-list{
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .site-header-sitenav .sitenav-item:not(:last-child){
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+}
+
+
 @media only screen and (max-width: 1000px) {
   .hero-content{
     width: 50%;
@@ -360,6 +411,31 @@ html{
 
   .index-service-img{
     margin-right: 32px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .site-header .main-link{
+    display: none;
+  }
+
+  .site-footer-container{
+    flex-direction: column;
+  }
+
+  .site-logo-site-footer{
+    margin-bottom: 24px;
+  }
+
+  .sitenav-site-footer .sitenav-list{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+
+  .sitenav-site-footer .sinov-item {
+    margin: 8px 24px;
   }
 }
 
@@ -412,6 +488,15 @@ html{
 }
 
 @media only screen and (max-width: 550px) {
+  .container{
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .site-header-open .site-header-sitenav{
+    padding: 22px;
+  }
+
   .hero-img{
     width: 75%;
   }
