@@ -174,7 +174,7 @@ html{
   color: #fff;
 }
 .main-link-outline:hover{
-  border: 1px solid transparent #fff;
+  border: 1px solid transparent ;
   background-color: #DE2E54;
   color: #fff;
 }
@@ -196,7 +196,8 @@ html{
 .hero-content{
   padding-top: 120px;
   padding-bottom: 120px;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
 }
 .hero-heading{
   margin-top: 0;
@@ -331,4 +332,47 @@ html{
   align-items: center;
   background-color: #222;
   /* background-color: #222; */
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .hero-content{
+    width: 50%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .hero-img{
+    width: 40%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hero-container{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-content{
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .hero-heading{
+    font-size: 24px;
+  }
+
+  .hero-text{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .hero-img{
+    width: 75%;
+  }
 }
